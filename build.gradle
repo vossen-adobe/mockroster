@@ -6,7 +6,7 @@ plugins {
 apply plugin: 'io.spring.dependency-management'
 
 group = 'com.carag'
-version = '0.0.1-SNAPSHOT'
+version = '2.0'
 sourceCompatibility = '1.8'
 
 repositories {
@@ -17,5 +17,10 @@ dependencies {
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.5.RELEASE'
+
+	compile('mysql:mysql-connector-java:8.0.11')
+	runtime('com.h2database:h2')
+
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 
 }
