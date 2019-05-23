@@ -1,4 +1,4 @@
-package com.dm.mockroster;
+package com.carag.mockroster;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

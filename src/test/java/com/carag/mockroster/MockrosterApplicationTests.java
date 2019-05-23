@@ -1,4 +1,4 @@
-package com.dm.mockroster;
+package com.carag.mockroster;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
