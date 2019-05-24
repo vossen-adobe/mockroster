@@ -1,0 +1,73 @@
+sourcedId,status,dateLastModified,title,grades,courseSourcedId,classCode,classType,location,schoolSourcedId,termSourcedIds,subjects,subjectCodes,periods
+"31763",,,"ELA 6 (6A ELA)",,"3_2209","","scheduled","305","3","FY",,,"1"
+"31764",,,"ELA 6 (6A ELA)",,"3_2209","","scheduled","305","3","FY",,,"8"
+"31777",,,"ELA 8 (8B ELA)",,"3_2237","","scheduled","211","3","FY",,,"3"
+"31778",,,"ELA 8 (8B ELA)",,"3_2237","","scheduled","211","3","FY",,,"4"
+"31785",,,"Science 6 (6S SCI)",,"3_1720","","scheduled","302","3","FY",,,"2"
+"31786",,,"Math 6 (6S MAT)",,"3_1719","","scheduled","302","3","FY",,,"1"
+"31815",,,"Soc St 6 (6S SOC)",,"3_1721","","scheduled","303","3","FY",,,"2"
+"31825",,,"ELA 7 (7B ELA)",,"3_2207","","scheduled","111","3","FY",,,"1"
+"31826",,,"ELA 7 (7B ELA)",,"3_2207","","scheduled","111","3","FY",,,"4"
+"31909",,,"Math 8 (8S MAT)",,"3_90","","scheduled","308","3","FY",,,"6"
+"31910",,,"Math 7 (7S MAT)",,"3_83","","scheduled","308","3","FY",,,"1"
+"31911",,,"Math 7 (7S MAT)",,"3_83","","scheduled","308","3","FY",,,"3"
+"31915",,,"Soc St 8 (8S SOC)",,"3_185","","scheduled","101","3","FY",,,"3"
+"31917",,,"Soc St 7 (7S SOC)",,"3_181","","scheduled","101","3","FY",,,"4"
+"31918",,,"Soc St 7 (7S SOC)",,"3_181","","scheduled","101","3","FY",,,"7"
+"31931",,,"Science 8 (8 SCI)",,"3_2497","","scheduled","208","3","FY",,,"1"
+"31932",,,"Science 8 (8 SCI)",,"3_2497","","scheduled","208","3","FY",,,"2"
+"31939",,,"Science 7 (7 SCI)",,"3_2496","","scheduled","108","3","FY",,,"2"
+"31940",,,"Science 7 (7 SCI)",,"3_2496","","scheduled","108","3","FY",,,"3"
+"32072",,,"Science 6 (6S SCI)",,"3_1720","","scheduled","302","3","FY",,,"9"
+"32073",,,"Math 6 (6S MAT)",,"3_1719","","scheduled","302","3","FY",,,"8"
+"32074",,,"Soc St 6 (6S SOC)",,"3_1721","","scheduled","303","3","FY",,,"9"
+"32522",,,"English 11 (ENG300i)",,"2_720","","scheduled","204","2","FY",,,"1"
+"32707",,,"Algebra 2 (MAT315)",,"2_1858","","scheduled","322","2","FY",,,"5"
+"32708",,,"Algebra 2 (MAT315)",,"2_1858","","scheduled","608","2","FY",,,"1"
+"32834",,,"SS9 Global Hist HP (SOC100H)",,"2_715","","scheduled","227","2","FY",,,"3"
+"32835",,,"SS9 Global Hist HP (SOC100H)",,"2_715","","scheduled","702","2","FY",,,"3"
+"32836",,,"SS10 Global Hist 2 HP (SOC200H)",,"2_704","","scheduled","701","2","FY",,,"3"
+"32837",,,"SS10 Global Hist 2 HP (SOC200H)",,"2_704","","scheduled","701","2","FY",,,"1"
+"32855",,,"SS11 US History & Govt  (SOC300i)",,"2_626","","scheduled","702","2","FY",,,"3"
+"32856",,,"SS11 US History & Govt  (SOC300i)",,"2_626","","scheduled","702","2","FY",,,"8"
+"32860",,,"SS12 Participation in Gov't/Econ (SOC402SC)",,"2_570","","scheduled","228","2","FY",,,"7"
+"33506",,,"ELA5 (ELA5)",,"7_1537","","scheduled","204","7","FY",,,
+"33517",,,"Sci5 (Sci5)",,"7_1553","","scheduled","203","7","FY",,,
+"33518",,,"Sci5 (Sci5)",,"7_1553","","scheduled","201","7","FY",,,
+"33526",,,"Math5 (Math5)",,"7_1552","","scheduled","200","7","FY",,,
+"33527",,,"Math3 (Math3)",,"7_1551","","scheduled","306","7","FY",,,
+"33528",,,"Math3 (Math3)",,"7_1551","","scheduled","312","7","FY",,,
+"33532",,,"ELA3 (ELA3)",,"7_1535","","scheduled","306","7","FY",,,
+"33533",,,"ELA3 (ELA3)",,"7_1535","","scheduled","312","7","FY",,,
+"33536",,,"Math5 (Math5)",,"7_1552","","scheduled","201","7","FY",,,
+"33539",,,"Math4 (Math4)",,"7_1554","","scheduled","212","7","FY",,,
+"33540",,,"Math4 (Math4)",,"7_1554","","scheduled","206","7","FY",,,
+"33544",,,"ELAK (ELAK)",,"7_1772","","scheduled","110","7","FY",,,
+"33545",,,"ELAK (ELAK)",,"7_1772","","scheduled","108","7","FY",,,
+"33546",,,"ELA2 (ELA2)",,"7_1783","","scheduled","211","7","FY",,,
+"33547",,,"ELA2 (ELA2)",,"7_1783","","scheduled","210","7","FY",,,
+"33548",,,"ELA1 (ELA1)",,"7_1780","","scheduled","107","7","FY",,,
+"33549",,,"ELA1 (ELA1)",,"7_1780","","scheduled","100","7","FY",,,
+"33551",,,"Math1 (Math1)",,"7_1785","","scheduled","107","7","FY",,,
+"33553",,,"MathK (MathK)",,"7_1774","","scheduled","110","7","FY",,,
+"33554",,,"MathK (MathK)",,"7_1774","","scheduled","108","7","FY",,,
+"33555",,,"Math2 (Math2)",,"7_1786","","scheduled","210","7","FY",,,
+"33556",,,"Math2 (Math2)",,"7_1786","","scheduled","211","7","FY",,,
+"33558",,,"Math1 (Math1)",,"7_1785","","scheduled","100","7","FY",,,
+"33559",,,"ELA4 (ELA4)",,"7_1536","","scheduled","209","7","FY",,,
+"33560",,,"ELA4 (ELA4)",,"7_1536","","scheduled","212","7","FY",,,
+"33561",,,"ELA5 (ELA5)",,"7_1537","","scheduled","212","7","FY",,,
+"33644",,,"Sci2 (Sci2)",,"7_1792","","scheduled","210","7","FY",,,
+"33645",,,"Sci2 (Sci2)",,"7_1792","","scheduled","211","7","FY",,,
+"33646",,,"SciK (SciK)",,"7_1777","","scheduled","110","7","FY",,,
+"33647",,,"SciK (SciK)",,"7_1777","","scheduled","108","7","FY",,,
+"33649",,,"Sci1 (Sci1)",,"7_1791","","scheduled","109","7","FY",,,
+"33650",,,"Sci1 (Sci1)",,"7_1791","","scheduled","100","7","FY",,,
+"33655",,,"Sci3 (Sci3)",,"7_1547","","scheduled","306","7","FY",,,
+"33656",,,"Sci3 (Sci3)",,"7_1547","","scheduled","312","7","FY",,,
+"33680",,,"Sci4 (Sci4)",,"7_1549","","scheduled","206","7","FY",,,
+"33681",,,"Sci4 (Sci4)",,"7_1549","","scheduled","202","7","FY",,,
+"34734",,,"Algebra 1 (AEMAT102)",,"2_2134","","scheduled","BCS SJ","2","FY",,,
+"34744",,,"English 9 (AEENG100)",,"2_1366","","scheduled","","2","FY",,,
+"34745",,,"English 10 (AEENG200)",,"2_1367","","scheduled","","2","FY",,,
+"34747",,,"English 12 (AEENG212)",,"2_238","","scheduled","","2","FY",,,

@@ -1,0 +1,8 @@
+sourcedId,status,dateLastModified,title,type,startDate,endDate,parentSourcedId,schoolYear
+"FY",,,"FY","schoolYear","2018-09-05","2019-06-22","","2018"
+"Q1",,,"MP1","gradingPeriod","2018-09-05","2019-11-09","","2018"
+"Q2",,,"MP2","gradingPeriod","2018-11-10","2019-01-29","","2018"
+"Q3",,,"MP3","gradingPeriod","2019-01-30","2019-04-13","","2018"
+"Q4",,,"MP4","gradingPeriod","2019-04-14","2019-06-22","","2018"
+"S1",,,"S1","term","2018-09-05","2019-01-29","","2018"
+"S2",,,"S2","term","2019-01-30","2019-06-22","","2018"

@@ -1,0 +1,5 @@
+sourcedId,status,dateLastModified,name,type,identifier,parentSourcedId,metadata.address1,metadata.address2,metadata.city,metadata.postCode,metadata.state
+"0",,,"ClassLink School District","district","1234567","","123 Main Street",,"Clifton","07011","New Jersey"
+"2",,,"ClassLink HS","school","123456789123","","247 Broad Street",,"Clifton","07011","New Jersey"
+"3",,,"ClassLink MS","school","123456789456","","832 Elm Street",,"Clifton","07011","New Jersey"
+"7",,,"ClassLink Elementary School","school","123456789789","","596 Smith Street",,"Clifton","07011","New Jersey"
