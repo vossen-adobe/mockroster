@@ -1,8 +1,8 @@
 package com.carag.mockroster;
 
+import com.carag.mockroster.data.repository.UserRepository;
 import com.carag.mockroster.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -11,14 +11,15 @@ import javax.annotation.PostConstruct;
 public class WorkingClass {
 
     @Autowired
-    private Environment env;
+    private UserRepository userRepository;
 
     @PostConstruct
     void execute () {
-        String path = env.getProperty("spring.jpa.properties.hibernate.id.new_generator_mappings");
+
 
         User u = new User();
 
+        User s = userRepository.save(u);
         System.out.println();
     }
 }

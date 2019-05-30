@@ -2,30 +2,62 @@ package com.carag.mockroster.entity;
 
 
 import lombok.Data;
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Type;
 
-import javax.persistence.*;
-import java.util.UUID;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 
 @Data
 @Entity
-@Table(name = "challenge")
+@Table
 
 public class User extends EntityBase<String> {
 
-    @Column(name = "question", columnDefinition = "TEXT")
-    private String question;
+    @Column
+    private String username;
 
-    @Column(name = "answer", columnDefinition = "TEXT")
-    private String answer;
+    @Column
+    private String userIds;
 
-    @Column(name = "author", updatable = false)
-    private String author;
+    @Column
+    private boolean enabledUser;
 
-    @Column(name = "lastauthor")
-    private String lastAuthor = "anonymous";
+    @Column
+    private String givenName;
 
+    @Column
+    private String familyName;
+
+    @Column
+    private String middleName;
+
+    @Column
+    private String role;
+
+    @Column
+    private String identifier;
+
+    @Column
+    private String email;
+
+    @Column
+    private String sms;
+
+    @Column
+    private String phone;
+
+    @Column
+    private String agents;
+
+    @Column
+    private String orgs;
+
+    @Column
+    private String grades;
+
+    @Column
+    private String password;
 
 }
+

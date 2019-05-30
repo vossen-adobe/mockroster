@@ -5,6 +5,7 @@ import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.id.IdentifierGenerator;
 
 import java.io.Serializable;
+import java.util.UUID;
 
 public class SourcedIdGenerator  implements IdentifierGenerator {
 
@@ -13,6 +14,6 @@ public class SourcedIdGenerator  implements IdentifierGenerator {
     public Serializable generate(SharedSessionContractImplementor session, Object object) throws HibernateException {
 
 
-         return "newID";
+         return UUID.randomUUID().toString();
     }
 }
