@@ -1,4 +1,36 @@
-
 databaseChangeLog:
 
-  - include: file="/db/changelog/changes/create-person-table-changelog-1.xml"
+  - changeSet:
+      id: compileSchema
+      author: root
+      changes:
+        - sqlFile:
+            # dbms: oracle
+            # encoding: utf8
+            path: db/changelog/schema/oneroster-schema.sql
+            # relativeToChangelogFile: true
+            # splitStatements: true
+            # stripComments: true
+
+  - changeSet:
+      id: loadData
+      author: root
+      changes:
+        - loadUpdateData:
+            file: db/changelog/data/users.csv
+            primaryKey: sourced_id
+            tableName: user
+
+
+          # catalogName: cat
+          #            columns:
+          #              - column:
+          #                  name: address
+          #                  type: varchar(255)
+          #            encoding: UTF-8
+          #            file: com/example/users.csv
+          #            primaryKey: pk_id
+          #            quotchar: A String
+          #            schemaName: public
+          #            separator: A String
+          #            tableName: person
