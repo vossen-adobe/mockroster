@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet author="admin" id="2">
+        <insert tableName="person">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="Tom"/>
+            <column name="address" value="USA"/>
+        </insert>
+    </changeSet>
+
+    <changeSet author="liquibase-docs" id="3">
+        <loadUpdateData
+                        file="users.csv"
+                        primaryKey="id"
+                        tableName="person">
+        </loadUpdateData>
+    </changeSet>
+
+
+    <changeSet id="init" author="author">
+        <sqlFile encoding="utf8" path="oneroster-schema.sql"/>
+    </changeSet>
+
+<!--    <changeSet author="admin" id="3">-->
+<!--        <insert tableName="user">-->
+<!--            <column name="id" value="number1"/>-->
+<!--            <column name="email" value="ronaldmcdonald"/>-->
+<!--        </insert>-->
+<!--    </changeSet>-->
+</databaseChangeLog>

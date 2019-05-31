@@ -1,0 +1,4 @@
+
+databaseChangeLog:
+
+  - include: file="/db/changelog/changes/create-person-table-changelog-1.xml"
