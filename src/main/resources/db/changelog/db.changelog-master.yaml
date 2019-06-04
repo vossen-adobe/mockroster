@@ -20,6 +20,7 @@ databaseChangeLog:
             file: db/changelog/data/users.csv
             primaryKey: sourced_id
             tableName: user
+            quotchar: '"'
 
 
           # catalogName: cat
