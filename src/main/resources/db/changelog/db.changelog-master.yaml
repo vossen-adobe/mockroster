@@ -18,7 +18,7 @@ databaseChangeLog:
       changes:
         - loadUpdateData:
             file: db/changelog/data/users.csv
-            primaryKey: sourced_id
+            primaryKey: sourcedId
             tableName: user
             quotchar: '"'
 

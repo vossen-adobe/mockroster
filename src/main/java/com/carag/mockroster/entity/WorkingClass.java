@@ -24,6 +24,8 @@ public class WorkingClass {
 
         User u = new User();
 
+        Object o = userRepository.findAll();
+
        // User s = userRepository.save(u);
         System.out.println();
     }

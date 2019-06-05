@@ -1,5 +1,5 @@
-sourced_id,status,date_last_modified,enabled_user,orgs,role,username,user_ids,given_name,family_name,middle_name,role,identifier,email,sms,phone,agents,grades,password
-18125,,2019-01-01 04:05:06.995,TRUE,2,student,billy "flores the great",{FED:18125},BILLY,FLORES,DASEAN,,17580,billy.flores@classlink.k12.nj.us,,,,11,
+sourcedId,status,dateLastModified,enabledUser,orgs,role,username,userIds,givenName,familyName,middleName,role,identifier,email,sms,phone,agents,grades,password
+18125,,2019-01-01 04:05:06.995,TRUE,2,student,billy flores the great,{FED:18125},BILLY,FLORES,DASEAN,,17580,billy.flores@classlink.k12.nj.us,,,,11,
 18149,,2019-01-01 04:05:06.995,TRUE,2,student,brittley.johnson,{FED:18149},BRITTLEY,JOHNSON,LAMAR,,14655,brittley.johnson@classlink.k12.nj.us,,,,12,
 18162,,2019-01-01 04:05:06.995,TRUE,2,student,jocelyn.harris,{FED:18162},JOCELYN,HARRIS,GENE,,19426,jocelyn.harris@classlink.k12.nj.us,,,,10,
 18217,,2019-01-01 04:05:06.995,TRUE,2,student,justin.vazquez,{FED:18217},JUSTIN,VAZQUEZ,SYNIA,,18924,justin.vazquez@classlink.k12.nj.us,,,,10,
