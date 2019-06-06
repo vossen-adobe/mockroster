@@ -26,7 +26,7 @@ public class WorkingClass {
 
         Object o = userRepository.findAll();
 
-       // User s = userRepository.save(u);
+        User s = userRepository.save(u);
         System.out.println();
     }
 }
