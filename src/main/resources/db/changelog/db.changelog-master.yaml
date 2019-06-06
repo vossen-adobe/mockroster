@@ -1,0 +1,26 @@
+databaseChangeLog:
+
+
+  - changeSet:
+      id: loadData
+      author: root
+      changes:
+        - loadUpdateData:
+            file: db/changelog/data/users.csv
+            primaryKey: sourcedId
+            tableName: user
+            quotchar: '"'
+
+
+          # catalogName: cat
+          #            columns:
+          #              - column:
+          #                  name: address
+          #                  type: varchar(255)
+          #            encoding: UTF-8
+          #            file: com/example/users.csv
+          #            primaryKey: pk_id
+          #            quotchar: A String
+          #            schemaName: public
+          #            separator: A String
+          #            tableName: person
