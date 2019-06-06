@@ -1,5 +1,6 @@
 package com.carag.mockroster.configuration;
 
+import com.sun.javafx.binding.Logging;
 import liquibase.Liquibase;
 import liquibase.database.jvm.JdbcConnection;
 import liquibase.exception.LiquibaseException;
@@ -9,6 +10,7 @@ import org.springframework.core.env.Environment;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
+import java.io.StringWriter;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
@@ -20,6 +22,7 @@ public class LiquibaseConfiguration {
 
     @PostConstruct
     public void liquibase() throws SQLException, LiquibaseException {
+
 
         String url = env.getProperty("spring.datasource.url");
         String username = env.getProperty("spring.datasource.username");

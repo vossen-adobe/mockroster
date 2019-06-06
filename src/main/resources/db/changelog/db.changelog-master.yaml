@@ -1,16 +1,5 @@
 databaseChangeLog:
 
-#  - changeSet:
-#      id: compileSchema
-#      author: root
-#      changes:
-#        - sqlFile:
-            # dbms: oracle
-            # encoding: utf8
-            #path: db/changelog/schema/oneroster-schema.sql
-            # relativeToChangelogFile: true
-            # splitStatements: true
-            # stripComments: true
 
   - changeSet:
       id: loadData
