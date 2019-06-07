@@ -26,7 +26,6 @@ public class LiquibaseConfiguration {
     @PostConstruct
     public void liquibase() throws SQLException, LiquibaseException {
 
-
         String url = env.getProperty("spring.datasource.url");
         String username = env.getProperty("spring.datasource.username");
         String password = env.getProperty("spring.datasource.password");
@@ -40,7 +39,6 @@ public class LiquibaseConfiguration {
             setLevel(Level.WARN);
             new Liquibase(changeLog, new ClassLoaderResourceAccessor(),
                     new JdbcConnection(DriverManager.getConnection(url, username, password))).update("");
-
         } finally {
             setLevel(level);
             logger.info("Finished CSV load... ");
