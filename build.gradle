@@ -35,7 +35,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'                 // This is stupid but needed ?
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'            // JPA is the way
-
+    
     implementation 'org.apache.commons:commons-lang3:3.7'                             // for ExceptionUtils
     implementation 'io.vavr:vavr:0.10.0'                                              // functional library
     implementation 'javax.inject:javax.inject:1'                                      // Lethal injection
@@ -47,9 +47,6 @@ dependencies {
     implementation 'com.h2database:h2'                                                // Data ain't storing itself
     implementation 'org.liquibase:liquibase-core:3.6.3'                               // LIQUIDATE
 
-    // Logging
-    implementation  'org.apache.logging.log4j:log4j-api:2.+'
-    implementation  'org.apache.logging.log4j:log4j-core:2.+'
     implementation  'org.springframework.boot:spring-boot-starter-log4j2:2.1.1.RELEASE'
     implementation  'com.lmax:disruptor:3.4.2'
 
