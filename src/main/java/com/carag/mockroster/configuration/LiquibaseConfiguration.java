@@ -24,7 +24,14 @@ public class LiquibaseConfiguration {
     @PostConstruct
     public void liquibase() throws SQLException, LiquibaseException {
 
-        Logger logger = LogManager.getLogger(this.getClass());
+        Logger logger = LogManager.getLogger(LiquibaseConfiguration.class);
+        String seed = env.getProperty("spring.liquibase.seed");
+
+        if (!Boolean.parseBoolean(seed) && null != seed) {
+            logger.info("Seed disabled, skipping... ");
+            return;
+        }
+
         String url = env.getProperty("spring.datasource.url");
         String username = env.getProperty("spring.datasource.username");
         String password = env.getProperty("spring.datasource.password");
