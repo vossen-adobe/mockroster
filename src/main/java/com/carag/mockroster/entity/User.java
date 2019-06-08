@@ -8,6 +8,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -70,5 +71,10 @@ public class User extends EntityBase<String> {
             joinColumns = @JoinColumn(name = "user", referencedColumnName = "sourcedId"),
             inverseJoinColumns = @JoinColumn(name = "section", referencedColumnName = "sourcedId"))
     private Set<Section> sectionSet;
+
+    @JsonIgnore
+    @ManyToOne
+    @JoinColumn(name = "schools", insertable = false, updatable = false)
+    private School schoolObj;
 }
 

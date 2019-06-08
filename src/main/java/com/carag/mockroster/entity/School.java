@@ -1,14 +1,18 @@
 package com.carag.mockroster.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 
-@Data
+@Getter @Setter
 @Entity
 @Table
 
@@ -28,4 +32,10 @@ public class School extends EntityBase<String> {
 
     @Column
     private String children;
+
+    @JsonIgnore
+    @OneToMany(
+            mappedBy = "schools"
+    )
+    private List<User> userList = new ArrayList<>();
 }

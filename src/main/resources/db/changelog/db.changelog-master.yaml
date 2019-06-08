@@ -6,14 +6,14 @@ databaseChangeLog:
       author: root
       changes:
         - loadUpdateData:
-            file: db/changelog/data/users.csv
-            primaryKey: sourcedId
-            tableName: user
-            quotchar: '"'
-        - loadUpdateData:
             file: db/changelog/data/schools.csv
             primaryKey: sourcedId
             tableName: school
+            quotchar: '"'
+        - loadUpdateData:
+            file: db/changelog/data/users.csv
+            primaryKey: sourcedId
+            tableName: user
             quotchar: '"'
         - loadUpdateData:
             file: db/changelog/data/courses.csv

@@ -24,6 +24,7 @@ public class WorkingClass {
     @Autowired
     private SectionRepository sectionRepository;
 
+
     @Autowired
     private TestData testData;
 
@@ -32,6 +33,7 @@ public class WorkingClass {
     public void execute() {
 
         Object o = new HashSet(userRepository.findAll());
+        Object s = new HashSet(sectionRepository.findAll());
 //
 //        Object s = sectionRepository.findAll();
 
