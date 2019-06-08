@@ -1,6 +1,7 @@
 package com.carag.mockroster;
 
 import com.carag.mockroster.data.repository.SectionRepository;
+import com.carag.mockroster.data.repository.TestData;
 import com.carag.mockroster.data.repository.UserRepository;
 import com.carag.mockroster.entity.Section;
 import com.carag.mockroster.entity.User;
@@ -8,8 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import javax.transaction.Transactional;
 import java.io.IOException;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Component
 public class WorkingClass {
@@ -20,16 +24,21 @@ public class WorkingClass {
     @Autowired
     private SectionRepository sectionRepository;
 
+    @Autowired
+    private TestData testData;
+
   //  @PostConstruct
+    @Transactional
     public void execute() {
 
-        Object o = userRepository.findAll();
+        Object o = new HashSet(userRepository.findAll());
+//
+//        Object s = sectionRepository.findAll();
 
-        Object s = sectionRepository.findAll();
+      //  Object t = testData.getAllUsers();
      //   Section s = sectionRepository.findAll().iterator().next();
      //   User u = userRepository.findById("18217").get();
 
-        String z = ((List<User>) o).get(0).toString();
         System.out.println();
     }
 }
