@@ -1,17 +1,22 @@
 package com.carag.mockroster.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
+import java.util.Set;
 
 
-@Data
+@Getter @Setter
+
 @Entity
 @Table
-
+@ToString
 public class User extends EntityBase<String> {
 
     @Column
@@ -51,7 +56,7 @@ public class User extends EntityBase<String> {
     private String agents;
 
     @Column
-    private String orgs;
+    private String schools;
 
     @Column
     private String grades;
@@ -59,5 +64,11 @@ public class User extends EntityBase<String> {
     @Column
     private String password;
 
+    @JsonIgnore
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinTable(name = "enrollment",
+            joinColumns = @JoinColumn(name = "user", referencedColumnName = "sourcedId"),
+            inverseJoinColumns = @JoinColumn(name = "section", referencedColumnName = "sourcedId"))
+    private Set<Section> sectionSet;
 }
 

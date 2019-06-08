@@ -1,14 +1,18 @@
 package com.carag.mockroster.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 
-@Data
+@Getter
+@Setter
 @Entity
 @Table
 
@@ -49,5 +53,9 @@ public class Section extends EntityBase<String> {
 
     @Column
     private String resources;
+
+    @JsonIgnore
+    @ManyToMany(mappedBy = "sectionSet", fetch = FetchType.LAZY)
+    private Set<User> userSet = new HashSet<>();
 
 }

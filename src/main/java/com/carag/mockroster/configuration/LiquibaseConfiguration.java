@@ -1,5 +1,6 @@
 package com.carag.mockroster.configuration;
 
+import com.carag.mockroster.WorkingClass;
 import liquibase.Liquibase;
 import liquibase.database.jvm.JdbcConnection;
 import liquibase.exception.LiquibaseException;
@@ -21,6 +22,9 @@ public class LiquibaseConfiguration {
     @Inject
     Environment env;
 
+    @Inject
+    WorkingClass w;
+
     @PostConstruct
     public void liquibase() throws SQLException, LiquibaseException {
 
@@ -41,6 +45,8 @@ public class LiquibaseConfiguration {
         new Liquibase(changeLog, new ClassLoaderResourceAccessor(),
                 new JdbcConnection(DriverManager.getConnection(url, username, password))).update("");
         logger.info("Finished CSV load... ");
+
+        w.execute();
 
     }
 

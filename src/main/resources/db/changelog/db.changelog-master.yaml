@@ -16,11 +16,6 @@ databaseChangeLog:
             tableName: school
             quotchar: '"'
         - loadUpdateData:
-            file: db/changelog/data/enrollments.csv
-            primaryKey: sourcedId
-            tableName: enrollment
-            quotchar: '"'
-        - loadUpdateData:
             file: db/changelog/data/courses.csv
             primaryKey: sourcedId
             tableName: course
@@ -34,4 +29,9 @@ databaseChangeLog:
             file: db/changelog/data/academicsessions.csv
             primaryKey: sourcedId
             tableName: academicsession
+            quotchar: '"'
+        - loadUpdateData:
+            file: db/changelog/data/enrollments.csv
+            primaryKey: sourcedId
+            tableName: enrollment
             quotchar: '"'
