@@ -41,6 +41,6 @@ public class EntityBase<U> {
     private String metadata;
 
     @Column
-    private Boolean status = true;
+    private String status = "active";
 
 }

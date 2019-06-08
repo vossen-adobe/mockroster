@@ -1,6 +1,7 @@
-package com.carag.mockroster.entity;
+package com.carag.mockroster;
 
 import com.carag.mockroster.data.repository.UserRepository;
+import com.carag.mockroster.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

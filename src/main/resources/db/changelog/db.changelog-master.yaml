@@ -10,3 +10,28 @@ databaseChangeLog:
             primaryKey: sourcedId
             tableName: user
             quotchar: '"'
+        - loadUpdateData:
+            file: db/changelog/data/schools.csv
+            primaryKey: sourcedId
+            tableName: school
+            quotchar: '"'
+        - loadUpdateData:
+            file: db/changelog/data/enrollments.csv
+            primaryKey: sourcedId
+            tableName: enrollment
+            quotchar: '"'
+        - loadUpdateData:
+            file: db/changelog/data/courses.csv
+            primaryKey: sourcedId
+            tableName: course
+            quotchar: '"'
+        - loadUpdateData:
+            file: db/changelog/data/sections.csv
+            primaryKey: sourcedId
+            tableName: section
+            quotchar: '"'
+        - loadUpdateData:
+            file: db/changelog/data/academicsessions.csv
+            primaryKey: sourcedId
+            tableName: academicsession
+            quotchar: '"'

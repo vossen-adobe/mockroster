@@ -1,0 +1,5 @@
+sourcedId,status,dateLastModified,metadata,name,type,identifier,parent,children
+0,active,2018-01-21 00:00:00.000,"[{'address1':'123 Main Street','address2':'Clifton','city':7011,'postcode':'New Jersey'}]",ClassLink School District,district,1234567,,
+2,active,2019-06-08 00:00:00.000,"[{'address1':'247 Broad Street','address2':'Clifton','city':7011,'postcode':'New Jersey'}]",ClassLink HS,school,123456789123,,
+3,active,2018-01-09 00:00:00.000,"[{'address1':'832 Elm Street','address2':'Clifton','city':7011,'postcode':'New Jersey'}]",ClassLink MS,school,123456789456,,
+7,active,2019-05-09 00:00:00.000,"[{'address1':'596 Smith Street','address2':'Clifton','city':7011,'postcode':'New Jersey'}]",ClassLink Elementary School,school,123456789789,,
