@@ -1,19 +1,15 @@
 package com.carag.mockroster;
 
-import com.carag.mockroster.data.repository.SectionRepository;
-import com.carag.mockroster.data.repository.TestData;
 import com.carag.mockroster.data.repository.UserRepository;
-import com.carag.mockroster.entity.Section;
 import com.carag.mockroster.entity.User;
+import com.carag.mockroster.execption.customexception.SearchFailedException;
+import com.carag.mockroster.search.FullTextSearch;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
+import javax.inject.Inject;
 import javax.transaction.Transactional;
-import java.io.IOException;
 import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
 @Component
 public class WorkingClass {
@@ -21,25 +17,33 @@ public class WorkingClass {
     @Autowired
     private UserRepository userRepository;
 
-    @Autowired
-    private SectionRepository sectionRepository;
+    @Inject
+    private FullTextSearch fullTextSearch;
+//    @Autowired
+//    private SectionRepository sectionRepository;
 
 
-    @Autowired
-    private TestData testData;
 
   //  @PostConstruct
-    @Transactional
+   // @Transactional
     public Object execute() {
 
-        Object o = new HashSet(userRepository.findAll());
-        Object s = new HashSet(sectionRepository.findAll());
+        Object o = null;
+
+        try {
+            fullTextSearch.setEntityType(User.class);
+            o = fullTextSearch.search("sectionSe0t.sourcedId:32707");
+        } catch (SearchFailedException e){
+            System.out.println();
+        }
+       // Object o = new HashSet(userRepository.findAll());
+
 //
 //        Object s = sectionRepository.findAll();
 
       //  Object t = testData.getAllUsers();
      //   Section s = sectionRepository.findAll().iterator().next();
      //   User u = userRepository.findById("18217").get();
-        return s;
+        return null;
     }
 }

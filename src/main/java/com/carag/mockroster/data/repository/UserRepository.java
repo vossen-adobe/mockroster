@@ -1,7 +1,6 @@
 package com.carag.mockroster.data.repository;
 
 import com.carag.mockroster.entity.User;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.util.List;
@@ -13,7 +12,7 @@ public interface UserRepository extends PagingAndSortingRepository<User, String>
     List<User> findAll();
 
 
-    List<User> findIt();
+
 
 }
 

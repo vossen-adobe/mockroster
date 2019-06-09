@@ -33,7 +33,7 @@ public class LiquibaseConfiguration {
 
         if (!Boolean.parseBoolean(seed) && null != seed) {
             logger.info("Seed disabled, skipping... ");
-            return;
+           // return;
         }
 
         String url = env.getProperty("spring.datasource.url");

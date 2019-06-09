@@ -1,4 +1,4 @@
-package com.carag.mockroster.data.repository;
+package com.carag.mockroster.entity;
 
 import com.carag.mockroster.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +18,8 @@ public class TestData {
     @Autowired
     private UserRepository userRepository;
 
-    @Autowired
-    private SectionRepository sectionRepository;
+//    @Autowired
+//    private SectionRepository sectionRepository;
 
     @Transactional
     public List<User> getAllUsers() {
