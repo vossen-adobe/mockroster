@@ -1,7 +1,10 @@
 package com.carag.mockroster.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -65,14 +68,15 @@ public class User extends EntityBase<String> {
     @Column
     private String password;
 
-    @JsonIgnore
+    //@JsonIgnore
+    @JsonIgnoreProperties("userSet")
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinTable(name = "enrollment",
             joinColumns = @JoinColumn(name = "user", referencedColumnName = "sourcedId"),
             inverseJoinColumns = @JoinColumn(name = "section", referencedColumnName = "sourcedId"))
     private Set<Section> sectionSet;
 
-    @JsonIgnore
+   // @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "schools", insertable = false, updatable = false)
     private School schoolObj;

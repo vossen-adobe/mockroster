@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface SectionRepository extends PagingAndSortingRepository<Section, String> {
 
-    @Query("select s from Section s left join fetch Enrollment e on s.sourcedId=e.section left join fetch User u on u.sourcedId=e.user")
+  //  @Query("select s from Section s left join fetch Enrollment e on s.sourcedId=e.section left join fetch User u on u.sourcedId=e.user")
     List<Section> findAll();
 }
 

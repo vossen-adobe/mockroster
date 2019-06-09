@@ -35,6 +35,7 @@ public class School extends EntityBase<String> {
 
     @JsonIgnore
     @OneToMany(
+            fetch = FetchType.LAZY,
             mappedBy = "schools"
     )
     private List<User> userList = new ArrayList<>();

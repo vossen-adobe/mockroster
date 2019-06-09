@@ -2,6 +2,8 @@ package com.carag.mockroster.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -54,7 +56,7 @@ public class Section extends EntityBase<String> {
     @Column
     private String resources;
 
-    @JsonIgnore
+    @JsonIgnoreProperties("sectionSet")
     @ManyToMany(mappedBy = "sectionSet", fetch = FetchType.LAZY)
     private Set<User> userSet = new HashSet<>();
 

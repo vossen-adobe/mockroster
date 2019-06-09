@@ -30,7 +30,7 @@ public class WorkingClass {
 
   //  @PostConstruct
     @Transactional
-    public void execute() {
+    public Object execute() {
 
         Object o = new HashSet(userRepository.findAll());
         Object s = new HashSet(sectionRepository.findAll());
@@ -40,7 +40,6 @@ public class WorkingClass {
       //  Object t = testData.getAllUsers();
      //   Section s = sectionRepository.findAll().iterator().next();
      //   User u = userRepository.findById("18217").get();
-
-        System.out.println();
+        return s;
     }
 }

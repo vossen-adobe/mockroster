@@ -46,8 +46,9 @@ public class LiquibaseConfiguration {
                 new JdbcConnection(DriverManager.getConnection(url, username, password))).update("");
         logger.info("Finished CSV load... ");
 
-        w.execute();
+        Object x = w.execute();
 
+        System.out.printf("");
     }
 
 }
