@@ -64,31 +64,33 @@ public class FullTextSearch<T> {
 
 
 
-        QueryBuilder qb = fullTextEm.getSearchFactory()
-                .buildQueryBuilder().forEntity(entityType).get();
-
-        Query fuzzyQuery = qb.keyword()
-                .onFields("sectionSet.id")
-                .matching("31917")
-                .createQuery();
-
-
-        FullTextQuery jpaQuery1 = fullTextEm.createFullTextQuery(fuzzyQuery, entityType);
-
-        Object o = jpaQuery1.getResultList();
-
-        System.out.println();
+//        QueryBuilder qb = fullTextEm.getSearchFactory()
+//                .buildQueryBuilder().forEntity(entityType).get();
+//
+//        Query fuzzyQuery = qb.keyword()
+//                .onFields("sectionSet.id")
+//                .matching("31917")
+//                .createQuery();
+//
+//
+//        FullTextQuery jpaQuery1 = fullTextEm.createFullTextQuery(fuzzyQuery, entityType);
+//
+////        Object o = jpaQuery1.getResultList();
+////
+////        System.out.println();
 
 
         try {
             query = new SLProcessor(parameters.getFuzziness()).format(query);
             query = (!filter.trim().isEmpty()) ? "(" + query + ") AND " + filter : query;
 
+            query = "sectionSet.id:31917";
             Query r = queryParser.parse(query);
             FullTextQuery jpaQuery = fullTextEm.createFullTextQuery(r, entityType);
 
 
 
+            Object o1 = jpaQuery.setMaxResults(p.getPageSize()).setFirstResult(p.getPageNumber() * p.getPageSize()).getResultList();
             return jpaQuery.setMaxResults(p.getPageSize()).setFirstResult(p.getPageNumber() * p.getPageSize());
 
         } catch (ParseException e) {
