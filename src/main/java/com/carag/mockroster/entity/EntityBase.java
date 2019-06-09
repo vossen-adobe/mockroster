@@ -40,6 +40,7 @@ public class EntityBase<U> {
             strategy = "com.carag.mockroster.configuration.SourcedIdGenerator")
 
     @Column
+    @Field(name="id")
     private String sourcedId;
 
 //    @CreatedDate

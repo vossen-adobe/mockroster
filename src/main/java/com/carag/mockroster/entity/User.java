@@ -83,7 +83,7 @@ public class User extends EntityBase<String> {
 
     //@JsonIgnore
 
-    @IndexedEmbedded//(depth = 1)
+    @IndexedEmbedded(depth = 1)
     @JsonIgnoreProperties("userSet")
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinTable(name = "enrollment",

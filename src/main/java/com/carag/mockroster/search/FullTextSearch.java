@@ -1,8 +1,6 @@
 package com.carag.mockroster.search;
 
-import com.carag.mockroster.entity.User;
 import com.carag.mockroster.execption.customexception.SearchFailedException;
-import lombok.SneakyThrows;
 import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.search.Query;
@@ -70,7 +68,7 @@ public class FullTextSearch<T> {
                 .buildQueryBuilder().forEntity(entityType).get();
 
         Query fuzzyQuery = qb.keyword()
-                .onFields("sectionSet.s1")
+                .onFields("sectionSet.id")
                 .matching("31917")
                 .createQuery();
 
